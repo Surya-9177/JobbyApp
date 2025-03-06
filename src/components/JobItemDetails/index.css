@@ -1,0 +1,16 @@
+.job-item-details-con {
+  min-height: 100vh;
+  background-color: #000000;
+}
+.skill-ul-con {
+  display: flex;
+  flex-wrap: wrap;
+}
+.life-at-com-con {
+  display: flex;
+  color: white;
+}
+.similar-con{
+  display: flex;
+  flex-wrap: wrap;
+}

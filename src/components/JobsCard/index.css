@@ -1,0 +1,35 @@
+.job-card-con {
+  background-color: #272727;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+.job-card-logo {
+  height: 30px;
+  width: 30px;
+  margin-top: 10px;
+}
+.job-card-con1 {
+  display: flex;
+}
+.job-card-initial1 {
+  margin-left: 15px;
+}
+.job-card-head {
+  font-size: 15px;
+}
+.job-card-rating {
+  font-size: 12px;
+}
+.job-card-con2 {
+  display: flex;
+}
+.p2 {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.jobs {
+  text-decoration: none;
+}
