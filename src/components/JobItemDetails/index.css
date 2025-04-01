@@ -7,10 +7,20 @@
   flex-wrap: wrap;
 }
 .life-at-com-con {
-  display: flex;
   color: white;
 }
-.similar-con{
-  display: flex;
-  flex-wrap: wrap;
+.similar-con {
+  width: 100%;
+}
+.similar-head {
+  padding-left: 40px;
+}
+@media screen and (min-width: 768px) {
+  .life-at-com-con {
+    display: flex;
+  }
+  .similar-con {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

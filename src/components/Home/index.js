@@ -5,10 +5,7 @@ import {Link} from 'react-router-dom'
 const Home = () => {
   return (
     <div className="home-con">
-      <ul>
-        <Header />
-      </ul>
-
+      <Header />
       <div className="home-con1">
         <h1 className="home-head">
           Find The Job That <br /> Fits Your Life

@@ -15,3 +15,8 @@
 .conn1 {
   display: flex;
 }
+@media screen and (max-width: 767px){
+  .similar-job-con{
+    width: 80%;
+  }
+}

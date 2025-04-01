@@ -2,7 +2,7 @@ import './index.css'
 
 const SkillsItem = props => {
   const {skillsListDetails} = props
-  const {id, name, skillsImageUrl} = skillsListDetails
+  const {name, skillsImageUrl} = skillsListDetails
 
   return (
     <li className="skill-con">

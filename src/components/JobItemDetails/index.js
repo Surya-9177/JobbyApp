@@ -4,7 +4,6 @@ import {Component} from 'react'
 import JobItem from '../JobItem'
 import Cookies from 'js-cookie'
 import SkillsItem from '../SkillsItem'
-import {v4} from 'uuid'
 import SimilarJobItem from '../SimilarJobItem'
 import Loader from 'react-loader-spinner'
 
@@ -98,7 +97,6 @@ class JobItemDetails extends Component {
       const each2 = data.job_details.skills
 
       const updatedJobDetails2 = each2.map(item => ({
-        id: v4(),
         name: item.name,
         skillsImageUrl: item.image_url,
       }))
@@ -167,8 +165,8 @@ class JobItemDetails extends Component {
             <SkillsItem skillsListDetails={each} key={each.id} />
           ))}
         </ul>
-        <ul>{this.renderLifeAtCompany()}</ul>
-        <h1>Similar Jobs</h1>
+        <ul className="lifeatcompany-con">{this.renderLifeAtCompany()}</ul>
+        <h1 className="similar-head">Similar Jobs</h1>
         <ul className="similar-con">
           {similarJobsList.map(each => (
             <SimilarJobItem similarJobDet={each} key={each.id} />

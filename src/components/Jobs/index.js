@@ -93,7 +93,6 @@ class Jobs extends Component {
       this.setState({
         profileInfo: updatedProfileData,
         isProfileLoading: false,
-        apiStatus: apiStatusConstants.success,
       })
     }
 

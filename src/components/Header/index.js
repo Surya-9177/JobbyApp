@@ -1,6 +1,9 @@
 import {Link, withRouter} from 'react-router-dom'
 import Cookies from 'js-cookie'
 import './index.css'
+import {FaHome} from 'react-icons/fa'
+import {FaSuitcase} from 'react-icons/fa'
+import {IoLogOutOutline} from 'react-icons/io5'
 
 const Header = props => {
   const onClickLogout = () => {
@@ -22,16 +25,33 @@ const Header = props => {
             </li>
           </Link>
         </div>
-        <div className="link-con">
-          <Link className="link" to="/">
-            <li>Home</li>
-          </Link>
-          <Link className="link" to="/jobs">
-            <li>Jobs</li>
-          </Link>
-        </div>
+
+        <Link className="link" to="/">
+          <li className="header-home-text">Home</li>
+          <li>
+            <FaHome className="header-home-icon" />
+          </li>
+        </Link>
+        <Link className="link" to="/jobs">
+          <li className="header-home-text">Jobs</li>
+          <li className="header-home-icon">
+            <FaSuitcase />
+          </li>
+        </Link>
         <li>
-          <button type="button" onClick={onClickLogout} className="btn1">
+          <IoLogOutOutline
+            className="header-home-icon i1"
+            type="button"
+            onClick={onClickLogout}
+          />
+        </li>
+
+        <li>
+          <button
+            className="header-home-text btn1"
+            type="button"
+            onClick={onClickLogout}
+          >
             Logout
           </button>
         </li>

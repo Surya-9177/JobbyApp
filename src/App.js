@@ -7,7 +7,6 @@ import Jobs from './components/Jobs'
 import JobItemDetails from './components/JobItemDetails'
 import NotFound from './components/NotFound'
 
-
 // Replace your code here
 const App = () => (
   <>
@@ -16,7 +15,7 @@ const App = () => (
       <ProtectedRoute exact path="/" component={Home} />
       <ProtectedRoute exact path="/jobs" component={Jobs} />
       <ProtectedRoute exact path="/jobs/:id" component={JobItemDetails} />
-      <Route exact="/bad-path" component={NotFound} />
+      <Route exact path="/bad-path" component={NotFound} />
     </Switch>
   </>
 )

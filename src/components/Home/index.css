@@ -8,9 +8,6 @@
 }
 .home-con1 {
   padding-left: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 .home-des {
   color: white;
